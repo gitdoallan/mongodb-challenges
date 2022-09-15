@@ -10,6 +10,6 @@ db.produtos.updateOne(
 // Crie uma query que retorne o nome para todos os documentos e curtidas (exceto para Big Mac).
 
 db.produtos.find(
-  { nome: { $ne: "Big Mac" } },
+  { },
   { _id: 0, nome: 1, curtidas: 1 },
 );
